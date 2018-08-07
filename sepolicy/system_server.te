@@ -8,4 +8,5 @@ allow system_server self:socket ioctl;
 allow system_server sysfs_als:file write;
 allow system_server sysfs_glove_mode:file rw_file_perms;
 allow system_server sysfs_proximity_sensor:file write;
+allow system_server mediaserver:process sigkill;
 allowxperm system_server self:socket ioctl msm_sock_ipc_ioctls;
